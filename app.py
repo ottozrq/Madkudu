@@ -29,7 +29,10 @@ class Page(Resource):
             user = model.User.objects.get(user_id=user_id)
         except:
             user = model.User(user_id=user_id, records=[])
-        day_and_time = datetime.strptime(timestamp, '%Y-%m-%dT%H:%M:%S.%fZ')
+        try:
+            day_and_time = datetime.strptime(timestamp, '%Y-%m-%dT%H:%M:%S.%fZ')
+        except:
+            return {'result': False}
         if day_and_time > datetime.now():
             return {'result': False}
         user.insert_record(name, day_and_time)
