@@ -1,0 +1,17 @@
+{
+  "user_id": "019mr8mf4r",
+  "requests": [
+    {
+      "user_id": "019mr8mf4r",
+      "name": "Pricing Page 222",
+      "timestamp": "2019-08-10T00:10:15.984Z"
+    }
+  ],
+  "response": {
+    "user_id": "019mr8mf4r",
+    "number_pages_viewed_the_last_7_days": 0,
+    "time_spent_on_site_last_7_days": 0,
+    "number_of_days_active_last_7_days": 0,
+    "most_viewed_page_last_7_days": ""
+  }
+}

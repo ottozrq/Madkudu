@@ -1,0 +1,6 @@
+## The following requirements were added by pip freeze:
+Flask==1.1.1
+flask-restplus==0.13.0
+jsonschema==3.0.2
+mongoengine==0.18.2
+pymongo==3.9.0
