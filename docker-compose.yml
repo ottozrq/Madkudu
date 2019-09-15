@@ -1,0 +1,29 @@
+version: '3'
+services:
+
+  web:
+    build: .
+#    command: python -u app.py
+    command: python app.py
+    ports:
+      - 5000:5000
+    volumes:
+      - .:/app
+    networks:
+      - npm_net
+    links:
+      - db
+    depends_on:
+      - db
+
+  db:
+    image: mongo:latest
+    networks:
+      - npm_net
+    ports:
+      - 27017:27017
+    command: mongod # --quiet
+
+
+networks:
+  npm_net:
